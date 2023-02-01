@@ -1,5 +1,9 @@
-export const Oscar = () => {
+type OscarProps = {
+  children: React.ReactNode
+}
+
+export const Oscar = (props: OscarProps) => {
   return (
-    <div>Oscar</div>
+    <div>{props.children}</div>
   )
 }
