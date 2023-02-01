@@ -27,9 +27,7 @@ function App() {
     {
       first: 'Princess',
       last: 'Diana'
-    }
-
-    ]
+    }]
   return (
     <div className='App'>
       <Greet name='Sam' messageCount={30} isLoggedIn={false} />
