@@ -12,6 +12,8 @@ import PersonList from './components/PersonList';
 import { Status } from './components/Status';
 import { Box } from './components/useContext/Box';
 import { ThemeContextProvider } from './components/useContext/ThemeContext';
+import { User } from './components/useContext/User';
+import { UserContextProvider } from './components/useContext/UserContext';
 function App() {
   const personName = {
     first: 'Bruce',
@@ -60,9 +62,13 @@ function App() {
       <Container styles={{ border: '1px solid black', padding: '1rem', display: 'flex' }} />
 
 
-        <ThemeContextProvider>
-          <Box />
-        </ThemeContextProvider>
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
 
 
