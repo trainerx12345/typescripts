@@ -1,8 +1,8 @@
 import React from 'react'
 
 type InputProps = {
-  value:string,
-  handleChange : (event:React.ChangeEvent<HTMLInputElement>) => void
+  value: string,
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 export const Input = (props: InputProps) => {
   /*
@@ -14,8 +14,8 @@ export const Input = (props: InputProps) => {
   return (
     <div>
       {/* This is pass via Props */}
-<input type='text' value={props.value} onChange={props.handleChange} /> 
-{/* handleInputChange */}
+      <input type='text' value={props.value} onChange={props.handleChange} />
+      {/* handleInputChange */}
 
     </div>
   )

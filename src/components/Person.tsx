@@ -5,7 +5,7 @@ type PersonProps = {
   }
 }
 export const Person = (props: PersonProps) => {
-  return <div>`{
+  return <div>{
     props.name.first
-  } props.name.last`</div>
+  } {props.name.last} Person.tsx</div>
 }

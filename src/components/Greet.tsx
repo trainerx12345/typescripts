@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+
 
 type GreetProps = {
   name: string,
@@ -24,5 +24,5 @@ const Greet = (props: GreetProps) => {
     </div>
   )
 }
-Greet.propTypes = {}
+
 export default Greet

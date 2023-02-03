@@ -1,5 +1,4 @@
-import React from 'react';
-import './App.css';
+
 import { Button } from './components/Button';
 import { Container } from './components/Container';
 import Greet from './components/Greet';
@@ -32,9 +31,10 @@ function App() {
       first: 'Princess',
       last: 'Diana'
     }]
+
   return (
     <div className='App'>
-      <Greet name='Sam' messageCount={30} isLoggedIn={false} />
+      <Greet name='Sam' messageCount={30} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
 
@@ -44,11 +44,12 @@ function App() {
       <Heading>Hello World!</Heading>
       {/* Children Props by react components */}
       <Oscar>
-        <Heading>Hello there Leo de Carpio</Heading>
+        <Heading>Hello there Leo de Carpio &nbsp; Heading.tsx and Oscar.tsx</Heading>
       </Oscar>
 
       {/* Optional props */}
-      <Greet2 name='Sam' isLoggedIn={false} />
+      <Greet2 name='Sam' isLoggedIn={true} />
+
 
 
       {/* Event Props */}
@@ -56,7 +57,7 @@ function App() {
         console.log('Button clicked', event, id)
       }} />
 
-      <Input value='' handleChange={(event) => console.log(event)} />
+      <Input value='asdf' handleChange={(event) => console.log(event)} />
 
       {/* Styles Props */}
       <Container styles={{ border: '1px solid black', padding: '1rem', display: 'flex' }} />

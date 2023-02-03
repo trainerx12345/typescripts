@@ -5,11 +5,11 @@ type StatusProps = {
 export const Status = (props: StatusProps) => {
   let message
   if (props.status === 'loading') {
-    message = 'Loading ...'
+    message = 'Loading ... status.tsx'
   } else if (props.status === 'success') {
-    message = 'Data fetched successfully'
+    message = `Data fetched successfully status.tsx`
   } else if (props.status === 'error') {
-    message = 'Error fetching data'
+    message = 'Error fetching data status.tsx'
   }
   return (
     <div>

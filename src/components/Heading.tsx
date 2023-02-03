@@ -3,6 +3,6 @@ type HeadingProps = {
 }
 export const Heading = (props: HeadingProps) => {
   return (
-    <div>props.children</div>
+    <div>{props.children} Heading.tsx</div>
   )
 }
