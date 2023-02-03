@@ -10,6 +10,8 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import PersonList from './components/PersonList';
 import { Status } from './components/Status';
+import { Box } from './components/useContext/Box';
+import { ThemeContextProvider } from './components/useContext/ThemeContext';
 function App() {
   const personName = {
     first: 'Bruce',
@@ -57,6 +59,10 @@ function App() {
       {/* Styles Props */}
       <Container styles={{ border: '1px solid black', padding: '1rem', display: 'flex' }} />
 
+
+        <ThemeContextProvider>
+          <Box />
+        </ThemeContextProvider>
     </div>
 
 
