@@ -1,0 +1,13 @@
+FUNCTIONS
+Review
+We learned all about how to use TypeScript to specify the types of function parameters and return types. Now we know how to:
+
+Give type annotations to function parameters.
+Deal with type annotations for optional parameters, which may have default values.
+Understand how TypeScript determines the return type of a function.
+Explicitly specify return types for functions, including for functions that don’t return anything.
+Use the above skills to diagnose and fix bugs in our code.
+Great job!
+
+Instructions
+As a final diversion/challenge, check out the code in the code editor. It contains seven plump, juicy errors. See if you can use TypeScript to find them all! (You might find it useful to use the terminal command clear to clear away TypeScript output you have already dealt with.)
