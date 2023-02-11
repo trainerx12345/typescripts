@@ -6,7 +6,7 @@ const maxDistance = 10;
 let result: string;
 
 const priceBracket: number = dollarSigns.length;
-let restaurantList: string[] = Array();
+let restaurantList: string[] = [];
 const filteredRestaurants = restaurants.filter((restaurant: any) => {
   if (Number(restaurant.priceBracket) > priceBracket) {
     return false;
