@@ -18,6 +18,7 @@ import { DomRef } from './components/useRef/DomRef';
 import { MutableRef } from './components/useRef/MutableRef';
 import { Private } from './components/Auth/Private';
 import { Profile } from './components/Auth/Profile';
+import { List } from './components/Generics/List';
 function App() {
   const personName = {
     first: 'Bruce',
@@ -98,9 +99,40 @@ function App() {
         <h3>Simple Login and Profile Management</h3>
         <Private isLoggedIn={true} component={Profile} />
       </div>
+      <div>
+        <h3>List Array Manipulation</h3>
+        {/* <List
+        items={['Batman', 'Superman', 'Wonder Woman']}
+        onClick={item => console.log(item)}
+      />
+      <List items={[1, 2, 3]} onClick={item => console.log(item)} /> */}
+        <List
+          items={[
+            {
+              id: 1,
+              first: 'Bruce',
+              last: 'Wayne'
+            },
+            {
+              id: 2,
+              first: 'Clark',
+              last: 'Kent'
+            },
+            {
+              id: 3,
+              first: 'Princess',
+              last: 'Diana'
+            }
+          ]}
+          onClick={item => console.log(item)}
+        />
+      </div>
+
+
+
+
+
     </div>
-
-
   );
 }
 
