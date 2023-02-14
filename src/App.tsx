@@ -16,6 +16,8 @@ import { UserContextProvider } from './components/context/UserContext';
 import ClassCounter from './components/Class/ClassCounter';
 import { DomRef } from './components/useRef/DomRef';
 import { MutableRef } from './components/useRef/MutableRef';
+import { Private } from './components/Auth/Private';
+import { Profile } from './components/Auth/Profile';
 function App() {
   const personName = {
     first: 'Bruce',
@@ -91,6 +93,11 @@ function App() {
       </div>
 
       <ClassCounter message='The value of the Counter is ' />
+
+      <div>
+        <h3>Simple Login and Profile Management</h3>
+        <Private isLoggedIn={true} component={Profile} />
+      </div>
     </div>
 
 
