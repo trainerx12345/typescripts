@@ -9,10 +9,13 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import PersonList from './components/PersonList';
 import { Status } from './components/Status';
-import { Box } from './components/useContext/Box';
-import { ThemeContextProvider } from './components/useContext/ThemeContext';
-import { User } from './components/useContext/User';
-import { UserContextProvider } from './components/useContext/UserContext';
+import { Box } from './components/context/Box';
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import { User } from './components/context/User';
+import { UserContextProvider } from './components/context/UserContext';
+import ClassCounter from './components/Class/ClassCounter';
+import { DomRef } from './components/useRef/DomRef';
+import { MutableRef } from './components/useRef/MutableRef';
 function App() {
   const personName = {
     first: 'Bruce',
@@ -70,6 +73,24 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+
+      <div>
+        <p>This is a useRef Scenario</p>
+        <div>
+          <strong>
+            <p>Mutable Ref Example</p>
+          </strong>
+          <MutableRef />
+        </div>
+        <div>
+          <strong>
+            <p>Dom Ref Example</p>
+          </strong>
+          <DomRef />
+        </div>
+      </div>
+
+      <ClassCounter message='The value of the Counter is ' />
     </div>
 
 
